@@ -1,7 +1,6 @@
 #NOISE
 ##Indicator1NoiseModelling=group
-##NoiseFromSource=name
-
+##NoiseFromReceptor=name
 
 #IMPORTS
 from qgis.core import *
@@ -11,18 +10,17 @@ import math
 import datetime
 from datetime import datetime, time, timedelta, date
 
-
 #   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   - 
 #INPUT AND OUTPUT
 ##houses=vector polygon
 ##containers=vector point
-##containersnoiseimpact=output vector
-##noisebuffer=output vector
+##housesnoiseimpact=output vector
+##intermediate=output vector
 
 
 #   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   - 
 #VARIABLES
-global_mode = 1#mode1=boolean
+global_mode = 2 #mode1=boolean; mode2=level
 global_E = 100.0                                                        #noise level of source
 global_L = 70.0                                                        #noise nuisance threshold
 global_c = 3.0                                                          #shading by building
@@ -135,51 +133,54 @@ def aggregate(I, wI, T, wT, P, wP, compensationmode):
     else:
         print "unknown mode"
         return -1
-    
-def findPeopleDensity(layer, i):
-    Atotal = 0.0
-    Ptotal = 0.0
+        
+def findAverage(layer, i):
+    sumvalue = 0.0
+    count = 0.0
     for feature in layer.getFeatures():
         attrs = feature.attributes()
-        Af = feature.geometry().area()
-        Atotal = Atotal + Af
-        Pf = attrs[i]
-        Ptotal = Ptotal + Pf
-    print Atotal
-    print Ptotal
-    return Ptotal/Atotal
+        if attrs[i]:
+            sumvalue = sumvalue + attrs[i]
+            count = count + 1.0
+    return sumvalue/count
     
 
-#   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   - 
-#SOURCEBASEDMODELLING
 
-#1. how many are affected...?
-if global_mode == 1:
+
+#   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   - 
+#RECEPTORBASEDMODELLING
+
+
+
+#1. is noise present at ...?
+#2. what is the noise level at...?
+if global_mode < 3 :
     
     r = noisecircle()
     
     outputs_QGISFIELDCALCULATOR_1=processing.runalg('qgis:fieldcalculator', containers,'joincat2',2,10.0,3.0,True,'to_string(@row_number)',None)
     
-    # spatially model intensity
-    outputs_QGISFIXEDDISTANCEBUFFER_1=processing.runalg('qgis:fixeddistancebuffer', outputs_QGISFIELDCALCULATOR_1['OUTPUT_LAYER'],r,20.0,False,None)
-    outputs_QGISPOLYGONCENTROIDS_1=processing.runalg('qgis:polygoncentroids', houses,None)
+    # distance for Intensity Factor
+    outputs_QGISDISTANCETONEARESTHUB_1=processing.runalg('qgis:distancetonearesthub', houses,outputs_QGISFIELDCALCULATOR_1['OUTPUT_LAYER'],'joincat2',0,0,None)
     
-    # spatially model people and assign to containers
-    outputs_QGISCONCAVEHULL_1=processing.runalg('qgis:concavehull', outputs_QGISPOLYGONCENTROIDS_1['OUTPUT_LAYER'],0.5,False,True,None)
+    # container joincat = house HubName to assign temporalities of closest container to house
+    outputs_QGISJOINATTRIBUTESTABLE_1=processing.runalg('qgis:joinattributestable', outputs_QGISDISTANCETONEARESTHUB_1['OUTPUT'],outputs_QGISFIELDCALCULATOR_1['OUTPUT_LAYER'],'HubName','joincat2',None)
     
-    outputs_QGISCOUNTPOINTSINPOLYGONWEIGHTED_1=processing.runalg('qgis:countpointsinpolygonweighted', outputs_QGISFIXEDDISTANCEBUFFER_1['OUTPUT'],outputs_QGISPOLYGONCENTROIDS_1['OUTPUT_LAYER'],'a_inhabita','nrpeople',noisebuffer)
-    
-    outputs_QGISJOINATTRIBUTESTABLE_1=processing.runalg('qgis:joinattributestable', outputs_QGISFIELDCALCULATOR_1['OUTPUT_LAYER'],outputs_QGISCOUNTPOINTSINPOLYGONWEIGHTED_1['OUTPUT'],'joincat2','joincat2',containersnoiseimpact)
+    # count number of containers in proximity for duration
+    outputs_QGISFIXEDDISTANCEBUFFER_1=processing.runalg('qgis:fixeddistancebuffer', outputs_QGISJOINATTRIBUTESTABLE_1['OUTPUT_LAYER'],r,20.0,False,None)
+    outputs_QGISCOUNTPOINTSINPOLYGON_1=processing.runalg('qgis:countpointsinpolygon', outputs_QGISFIXEDDISTANCEBUFFER_1['OUTPUT'],containers,'count_Cont',intermediate)
+    outputs_QGISJOINATTRIBUTESTABLE_2=processing.runalg('qgis:joinattributestable', outputs_QGISJOINATTRIBUTESTABLE_1['OUTPUT_LAYER'],outputs_QGISCOUNTPOINTSINPOLYGON_1['OUTPUT'],'a_cat','a_cat',housesnoiseimpact)
     
     # determine factors, normalise, aggregate
-    layer = getLayer(containersnoiseimpact)
-    iPeople = layer.fieldNameIndex('nrpeople')
-    
+    layer = getLayer(housesnoiseimpact)
+    iPeople = layer.fieldNameIndex('a_inhabita')
+    iHubDist = layer.fieldNameIndex('HubDist')
     
     layer.dataProvider().addAttributes([QgsField("Hour", QVariant.Double),QgsField("fMoment", QVariant.Double),QgsField("fDuration", QVariant.Double),QgsField("fFrequency", QVariant.Double),QgsField("fIntensity", QVariant.Double),QgsField("fPeople", QVariant.Double),QgsField("fTemporal", QVariant.Double),QgsField("Impact", QVariant.Double)])
     layer.updateFields()
     
     iHour = layer.fieldNameIndex('Hour')
+    iCountContainer = layer.fieldNameIndex('count_Cont')
     iFMoment = layer.fieldNameIndex('fMoment')
     iFDuration = layer.fieldNameIndex('fDuration')
     iFFrequency = layer.fieldNameIndex('fFrequency')
@@ -191,53 +192,69 @@ if global_mode == 1:
     iDuration= layer.fieldNameIndex('duration')
     iFrequency= layer.fieldNameIndex('frequency')
     
-    outputs_QGISJOINATTRIBUTESBYLOCATION_1=processing.runalg('qgis:joinattributesbylocation', outputs_QGISCONCAVEHULL_1['OUTPUT'],houses,['intersects'],1,1,'sum',0,None)
-    layerdensity = getLayer(outputs_QGISJOINATTRIBUTESBYLOCATION_1['OUTPUT'])
-    iPeopleForHouses = layerdensity.fieldNameIndex('suma_Inhab')
-    thr_people_container = findPeopleDensity(layerdensity, iPeopleForHouses) * 2.0 * math.pi * r * r
-    print thr_people_container
+    thr_people_house = 2.0 * findAverage(layer, iPeople)
 
     layer.startEditing()
-
     for feature in layer.getFeatures():
         
         attrs = feature.attributes()
-        
-        FIntensity = 1.0
+    
+        # intensity factor
+        d = attrs[iHubDist]
+        if global_mode == 1:
+            Intensity = booleannoise(d, r)
+            FIntensity = float(Intensity)
+        elif global_mode == 2:
+            Intensity = noiselevel(d, default_rho)
+            FIntensity = normalise(Intensity, global_L, global_E)
         layer.changeAttributeValue(feature.id(), iFIntensity, FIntensity)
         
-        nrpeople = attrs[iPeople]
-        FPeople = normalise(nrpeople, 0.0, thr_people_container)
+        #people factor
+        nrpeople = attrs[iPeople]       
+        FPeople = normalise(nrpeople, 0.0, thr_people_house)
         layer.changeAttributeValue(feature.id(), iFPeople, FPeople)
         
+        #temporal factor
         moment = todatetime(attrs[iMoment])
         hour = moment.hour
         fmoment = noiseMoment(moment)
-        duration =  attrs[iDuration]
+        duration = attrs[iDuration]
+        newduration =  float(attrs[iDuration]) * attrs[iCountContainer]
         fduration = noiseDuration(duration)
         frequency =  attrs[iFrequency]
         ffrequency = noiseFrequency(frequency)
         FTemporal = noiseTemporality(fmoment, fduration, ffrequency)
         layer.changeAttributeValue(feature.id(), iHour, hour)
         layer.changeAttributeValue(feature.id(), iFMoment, fmoment)
+        layer.changeAttributeValue(feature.id(), iDuration, newduration)
         layer.changeAttributeValue(feature.id(), iFDuration, fduration)
         layer.changeAttributeValue(feature.id(), iFFrequency, ffrequency)
         layer.changeAttributeValue(feature.id(), iFTemporal, FTemporal)
         
-        Impact = aggregate(FIntensity, 1.0, FPeople, 1.0, FTemporal, 1.0, "fuzzyavg")
+        # impact
+        Impact = aggregate(FIntensity, 1.0, FPeople, 1.0, FTemporal, 1.0, "nocompensation")
         layer.changeAttributeValue(feature.id(), iFImpact, Impact)
         
     layer.commitChanges()
     
-
-#2. how many are affected at which level...?
+   
 
 
 #3. neighbourhood building density
-
+elif global_mode == 3:
+    
+    print "density"
 
 #4. specific shading
-
+elif global_mode == 4:
+    
+    print "specific shading"
 
 #5. emitted noise variable with speed and load
+elif global_mode == 5:
+    
+    print "variable emitted noise"
+    
+else:
+    print "unknown mode"
 
