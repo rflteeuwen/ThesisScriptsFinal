@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis version="2.14.6-Essen" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" simplifyMaxScale="1" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+<qgis version="2.14.6-Essen" minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" simplifyMaxScale="1" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
   <edittypes>
     <edittype widgetv2type="TextEdit" name="BU_CODE">
       <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -79,90 +79,6 @@
     <edittype widgetv2type="TextEdit" name="NrOfVerbli">
       <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
     </edittype>
-    <edittype widgetv2type="TextEdit" name="meancat">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="sumcat">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="meana_AANT">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="suma_AANT_">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="meana_P_00">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="suma_P_00_">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="meana_P_15">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="suma_P_15_">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="meana_P_25">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="suma_P_25_">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="meana_P_45">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="suma_P_45_">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="meana_P_65">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="suma_P_65_">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="meana_orga">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="suma_organ">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="meana_NrOf">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="suma_NrOfV">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="meana_Inha">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="suma_Inhab">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="meana_Hous">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="suma_House">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="meanb_cat">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="sumb_cat">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="meana_cat">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="suma_cat">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="meanHubDis">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="sumHubDist">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
     <edittype widgetv2type="TextEdit" name="meanmycost">
       <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
     </edittype>
@@ -181,106 +97,16 @@
     <edittype widgetv2type="TextEdit" name="summylengt">
       <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
     </edittype>
-    <edittype widgetv2type="TextEdit" name="meansequ_1">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="sumseque_1">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="meancat_2">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="sumcat_2">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="meana_aa_1">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="suma_aan_1">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="meana_p__1">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="suma_p_0_1">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="meana_p__2">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="suma_p_1_1">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="meana_p__3">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="suma_p_2_1">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="meana_p__4">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="suma_p_4_1">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="meana_p__5">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="suma_p_6_1">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="meana_or_1">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="suma_org_1">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="meana_nr_1">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="suma_nro_1">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="meana_in_1">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="suma_inh_1">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="meana_ho_1">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="suma_hou_1">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="meanb_cat_">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="sumb_cat_2">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="meana_cat_">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="suma_cat_2">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="meanhubd_1">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="sumhubdi_1">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
     <edittype widgetv2type="TextEdit" name="meanmyco_1">
       <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
     </edittype>
     <edittype widgetv2type="TextEdit" name="summycost_">
       <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
     </edittype>
-    <edittype widgetv2type="TextEdit" name="meansequ_2">
+    <edittype widgetv2type="TextEdit" name="meansequ_1">
       <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
     </edittype>
-    <edittype widgetv2type="TextEdit" name="sumseque_2">
+    <edittype widgetv2type="TextEdit" name="sumseque_1">
       <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
     </edittype>
     <edittype widgetv2type="TextEdit" name="meanmyle_1">
@@ -289,16 +115,10 @@
     <edittype widgetv2type="TextEdit" name="summylen_1">
       <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
     </edittype>
-    <edittype widgetv2type="TextEdit" name="meansequ_3">
+    <edittype widgetv2type="TextEdit" name="meannrpeop">
       <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
     </edittype>
-    <edittype widgetv2type="TextEdit" name="sumseque_3">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="meancount_">
-      <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="sumcount_C">
+    <edittype widgetv2type="TextEdit" name="sumnrpeopl">
       <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
     </edittype>
     <edittype widgetv2type="TextEdit" name="meanHour">
@@ -355,13 +175,20 @@
   </edittypes>
   <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
     <rules key="{cd2a4ba9-ad4d-40cf-af0b-87cc807e16dc}">
-      <rule key="{fc989da7-3b78-4804-8d7a-f2ac199dac38}" symbol="0">
-        <rule checkstate="0" filter="NOT &quot;sumImpact&quot;" key="{3c8810d5-ef46-4514-9eaa-85233f93897d}" symbol="1"/>
-        <rule checkstate="0" filter="&quot;sumImpact&quot; >= 0.0000 AND &quot;sumImpact&quot; &lt;= 20.0000" key="{8a28e22b-64c5-4ff7-87d8-269ec8c6d8ff}" symbol="2" label="&quot;sumImpact&quot; >= 0.0000 AND &quot;sumImpact&quot; &lt;= 20.0000"/>
-        <rule checkstate="0" filter="&quot;sumImpact&quot; > 20.0000 AND &quot;sumImpact&quot; &lt;= 40.0000" key="{fe3aa2a8-5555-4ac3-82e0-43c055de6912}" symbol="3" label="&quot;sumImpact&quot; > 20.0000 AND &quot;sumImpact&quot; &lt;= 40.0000"/>
-        <rule checkstate="0" filter="&quot;sumImpact&quot; > 40.0000 AND &quot;sumImpact&quot; &lt;= 60.0000" key="{b92fdbf7-a8eb-4bac-b759-5f3c7204e070}" symbol="4" label="&quot;sumImpact&quot; > 40.0000 AND &quot;sumImpact&quot; &lt;= 60.0000"/>
-        <rule checkstate="0" filter="&quot;sumImpact&quot; > 60.0000 AND &quot;sumImpact&quot; &lt;= 80.0000" key="{4ab58162-50ef-4af3-8676-022705cc1ff5}" symbol="5" label="&quot;sumImpact&quot; > 60.0000 AND &quot;sumImpact&quot; &lt;= 80.0000"/>
-        <rule checkstate="0" filter="&quot;sumImpact&quot; > 80.0000 AND &quot;sumImpact&quot; &lt;= 100.0000" key="{57dc6440-dd5e-4d13-bf8f-eaec84d38d45}" symbol="6" label="&quot;sumImpact&quot; > 80.0000 AND &quot;sumImpact&quot; &lt;= 100.0000"/>
+      <rule key="{fc989da7-3b78-4804-8d7a-f2ac199dac38}" symbol="0"/>
+      <rule checkstate="0" key="{f066204a-ac63-4009-978f-43f2ce8b1dfd}" symbol="1" label="INTENSITY (varying colour)">
+        <rule checkstate="0" filter="&quot;sumImpact&quot; >= 0.0000 AND &quot;sumImpact&quot; &lt;= 20.0000" key="{e802f0ff-878b-47b8-9944-de521d3f4a32}" symbol="2" label="&quot;sumImpact&quot; >= 0.0000 AND &quot;sumImpact&quot; &lt;= 20.0000"/>
+        <rule checkstate="0" filter="&quot;sumImpact&quot; > 20.0000 AND &quot;sumImpact&quot; &lt;= 40.0000" key="{f7b3097b-f248-43ce-837c-b49777f4a7fa}" symbol="3" label="&quot;sumImpact&quot; > 20.0000 AND &quot;sumImpact&quot; &lt;= 40.0000"/>
+        <rule checkstate="0" filter="&quot;sumImpact&quot; > 40.0000 AND &quot;sumImpact&quot; &lt;= 60.0000" key="{5046d97e-a8a4-4ef9-87e7-537a883a9398}" symbol="4" label="&quot;sumImpact&quot; > 40.0000 AND &quot;sumImpact&quot; &lt;= 60.0000"/>
+        <rule checkstate="0" filter="&quot;sumImpact&quot; > 60.0000 AND &quot;sumImpact&quot; &lt;= 80.0000" key="{03487f22-31fb-4c07-a347-2ae9dd6fc8dc}" symbol="5" label="&quot;sumImpact&quot; > 60.0000 AND &quot;sumImpact&quot; &lt;= 80.0000"/>
+        <rule checkstate="0" filter="&quot;sumImpact&quot; > 80.0000 AND &quot;sumImpact&quot; &lt;= 100.0000" key="{412dd649-faae-4506-b038-c9728f063540}" symbol="6" label="&quot;sumImpact&quot; > 80.0000 AND &quot;sumImpact&quot; &lt;= 100.0000"/>
+      </rule>
+      <rule checkstate="0" key="{187b45c9-f48b-45ca-ac73-1150558a919f}" symbol="7" label="PEOPLE (varying colour)">
+        <rule checkstate="0" filter="&quot;sumImpact&quot; > 40.0000 AND &quot;sumImpact&quot; &lt;= 60.0000" key="{5a6a9943-4322-4d10-a3ab-87d1aa339b48}" symbol="8" label="&quot;sumImpact&quot; > 40.0000 AND &quot;sumImpact&quot; &lt;= 60.0000"/>
+        <rule checkstate="0" filter="&quot;sumImpact&quot; > 40.0000 AND &quot;sumImpact&quot; &lt;= 60.0000" key="{c16cb608-cbef-48cd-9710-cf7d699fc2ef}" symbol="9" label="&quot;sumImpact&quot; > 40.0000 AND &quot;sumImpact&quot; &lt;= 60.0000"/>
+        <rule checkstate="0" filter="&quot;sumImpact&quot; > 40.0000 AND &quot;sumImpact&quot; &lt;= 60.0000" key="{e94c2508-f337-4928-8c9a-8c1b90bfd2bf}" symbol="10" label="&quot;sumImpact&quot; > 40.0000 AND &quot;sumImpact&quot; &lt;= 60.0000"/>
+        <rule checkstate="0" filter="&quot;sumImpact&quot; > 40.0000 AND &quot;sumImpact&quot; &lt;= 60.0000" key="{193a2085-af94-493d-8524-398049c711cb}" symbol="11" label="&quot;sumImpact&quot; > 40.0000 AND &quot;sumImpact&quot; &lt;= 60.0000"/>
+        <rule checkstate="0" filter="&quot;sumImpact&quot; > 40.0000 AND &quot;sumImpact&quot; &lt;= 60.0000" key="{50ed5e2c-5662-4fd0-a3f3-d2dbabba2dfa}" symbol="12" label="&quot;sumImpact&quot; > 40.0000 AND &quot;sumImpact&quot; &lt;= 60.0000"/>
       </rule>
     </rules>
     <symbols>
@@ -371,9 +198,9 @@
           <symbol alpha="1" clip_to_extent="1" type="marker" name="@0@0">
             <layer pass="0" class="SimpleMarker" locked="0">
               <prop k="angle" v="0"/>
-              <prop k="color" v="255,0,0,255"/>
+              <prop k="color" v="255,0,0,0"/>
               <prop k="color_dd_active" v="1"/>
-              <prop k="color_dd_expression" v="CASE &#xd;&#xa;WHEN &quot;meanfInten&quot; >= 0 AND &quot;meanfInten&quot;&lt;= 0.20 THEN color_rgb(253,211,153) &#xd;&#xa;WHEN &quot;meanfInten&quot; >= 0.20 AND &quot;meanfInten&quot;&lt;= 0.40 THEN color_rgb(252,166,108)&#xd;&#xa;WHEN &quot;meanfInten&quot; >= 0.40 AND &quot;meanfInten&quot;&lt;= 0.60 THEN color_rgb(242,114,73)&#xd;&#xa;WHEN &quot;meanfInten&quot; >= 0.60 AND &quot;meanfInten&quot;&lt;= 0.80 THEN color_rgb(217,59,40)&#xd;&#xa;WHEN &quot;meanfInten&quot; >= 0.80 AND &quot;meanfInten&quot;&lt;= 1.00 THEN color_rgb(179,0,0)&#xd;&#xa;END"/>
+              <prop k="color_dd_expression" v="CASE &#xd;&#xa;WHEN &quot;sumfIntens&quot; > 0 AND &quot;sumfIntens&quot;&lt;= 1 THEN color_rgb(253,211,153) &#xd;&#xa;WHEN &quot;sumfIntens&quot; >= 1 AND &quot;sumfIntens&quot;&lt;= 2THEN color_rgb(252,166,108)&#xd;&#xa;WHEN &quot;sumfIntens&quot; >= 2 AND &quot;sumfIntens&quot;&lt;= 3 THEN color_rgb(242,114,73)&#xd;&#xa;WHEN &quot;sumfIntens&quot; >= 3 AND &quot;sumfIntens&quot;&lt;= 4 THEN color_rgb(217,59,40)&#xd;&#xa;WHEN &quot;sumfIntens&quot; >= 4 THEN color_rgb(179,0,0)&#xd;&#xa;END"/>
               <prop k="color_dd_field" v=""/>
               <prop k="color_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
@@ -389,7 +216,7 @@
               <prop k="scale_method" v="diameter"/>
               <prop k="size" v="2"/>
               <prop k="size_dd_active" v="1"/>
-              <prop k="size_dd_expression" v="&quot;meanfPeopl&quot; * 500"/>
+              <prop k="size_dd_expression" v="&quot;sumfPeople&quot;*100"/>
               <prop k="size_dd_field" v=""/>
               <prop k="size_dd_useexpr" v="1"/>
               <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -415,16 +242,106 @@
       <symbol alpha="1" clip_to_extent="1" type="fill" name="1">
         <layer pass="0" class="SimpleFill" locked="0">
           <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-          <prop k="color" v="255,255,255,255"/>
+          <prop k="color" v="54,124,138,0"/>
           <prop k="joinstyle" v="bevel"/>
           <prop k="offset" v="0,0"/>
           <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="0,0,0,255"/>
+          <prop k="outline_color" v="0,0,0,0"/>
           <prop k="outline_style" v="solid"/>
           <prop k="outline_width" v="0.26"/>
           <prop k="outline_width_unit" v="MM"/>
           <prop k="style" v="solid"/>
+        </layer>
+      </symbol>
+      <symbol alpha="1" clip_to_extent="1" type="fill" name="10">
+        <layer pass="0" class="CentroidFill" locked="0">
+          <prop k="point_on_surface" v="0"/>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="@10@0">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="255,0,0,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="150"/>
+              <prop k="size_dd_active" v="0"/>
+              <prop k="size_dd_expression" v=""/>
+              <prop k="size_dd_field" v=""/>
+              <prop k="size_dd_useexpr" v="0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MapUnit"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+        </layer>
+      </symbol>
+      <symbol alpha="1" clip_to_extent="1" type="fill" name="11">
+        <layer pass="0" class="CentroidFill" locked="0">
+          <prop k="point_on_surface" v="0"/>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="@11@0">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="255,0,0,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="200"/>
+              <prop k="size_dd_active" v="0"/>
+              <prop k="size_dd_expression" v=""/>
+              <prop k="size_dd_field" v=""/>
+              <prop k="size_dd_useexpr" v="0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MapUnit"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+        </layer>
+      </symbol>
+      <symbol alpha="1" clip_to_extent="1" type="fill" name="12">
+        <layer pass="0" class="CentroidFill" locked="0">
+          <prop k="point_on_surface" v="0"/>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="@12@0">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="255,0,0,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="250"/>
+              <prop k="size_dd_active" v="0"/>
+              <prop k="size_dd_expression" v=""/>
+              <prop k="size_dd_field" v=""/>
+              <prop k="size_dd_useexpr" v="0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MapUnit"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
         </layer>
       </symbol>
       <symbol alpha="1" clip_to_extent="1" type="fill" name="2">
@@ -500,6 +417,81 @@
           <prop k="outline_width" v="0.26"/>
           <prop k="outline_width_unit" v="MM"/>
           <prop k="style" v="solid"/>
+        </layer>
+      </symbol>
+      <symbol alpha="1" clip_to_extent="1" type="fill" name="7">
+        <layer pass="0" class="SimpleFill" locked="0">
+          <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+          <prop k="color" v="54,124,138,0"/>
+          <prop k="joinstyle" v="bevel"/>
+          <prop k="offset" v="0,0"/>
+          <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="outline_color" v="0,0,0,0"/>
+          <prop k="outline_style" v="solid"/>
+          <prop k="outline_width" v="0.26"/>
+          <prop k="outline_width_unit" v="MM"/>
+          <prop k="style" v="solid"/>
+        </layer>
+      </symbol>
+      <symbol alpha="1" clip_to_extent="1" type="fill" name="8">
+        <layer pass="0" class="CentroidFill" locked="0">
+          <prop k="point_on_surface" v="0"/>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="@8@0">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="255,0,0,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="50"/>
+              <prop k="size_dd_active" v="0"/>
+              <prop k="size_dd_expression" v=""/>
+              <prop k="size_dd_field" v=""/>
+              <prop k="size_dd_useexpr" v="0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MapUnit"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+        </layer>
+      </symbol>
+      <symbol alpha="1" clip_to_extent="1" type="fill" name="9">
+        <layer pass="0" class="CentroidFill" locked="0">
+          <prop k="point_on_surface" v="0"/>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="@9@0">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="255,0,0,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="100"/>
+              <prop k="size_dd_active" v="0"/>
+              <prop k="size_dd_expression" v=""/>
+              <prop k="size_dd_field" v=""/>
+              <prop k="size_dd_useexpr" v="0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MapUnit"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
         </layer>
       </symbol>
     </symbols>
@@ -671,7 +663,7 @@
     <selectedonly on=""/>
   </labelattributes>
   <SingleCategoryDiagramRenderer diagramType="Pie">
-    <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" sizeType="MM" minScaleDenominator="0">
+    <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" sizeType="MM" minScaleDenominator="-4.65661e-10">
       <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
       <attribute field="" color="#000000" label=""/>
     </DiagramCategory>
